@@ -60,3 +60,28 @@ function passCheck() {
 }
 
 btnCheck.addEventListener("click", passCheck);
+
+// Question 3 
+
+let btn3 = document.querySelector("#btn3");
+let url3 = "https://mock-practice.prakhar10v.repl.co/items";
+let output3 = document.querySelector("#output3");
+
+ function makeCall3() {
+     fetch(url3)
+        .then(response => response.json())
+        .then(display => {
+            for (i=0; i<display.length; i++ ){
+                // output3.innerText = `${display[i].item} `;
+                display.forEach( () => {
+                    output3.innerText =  display[i].price ;
+                })            
+            }
+
+            // display.forEach( () => {
+            //     output3.innerText =  display[i].price ;
+            // })
+            // output3.innerText = display.item; 
+        })
+ }
+btn3.addEventListener("click", makeCall3);
