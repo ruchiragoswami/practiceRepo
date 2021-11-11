@@ -27,10 +27,12 @@ function clickHandler() {
     fetch(url)
     // .then( response => console.log(response))
     .then(display => {
-        if (display.status== 401  ) {
+        if (display.status === 401  ) {
             outputR.innerText = "Error 401: your are not logged in";
         } else if (display.status === 404) {
             outputR.innerText = "error 404";
+        } else if (display.status === 200) {
+            outputR.innerText = "Hurray! it's working!";
         }
     })
 }
