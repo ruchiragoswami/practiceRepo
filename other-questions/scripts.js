@@ -40,3 +40,23 @@ function clickHandler() {
         
 btnCall.addEventListener("click", clickHandler);
         
+
+// Question 4 
+
+let yName = document.querySelector("#yName");
+let yPass  = document.querySelector("#yPass");
+let btnCheck = document.querySelector("#btnCheck");
+let output4 = document.querySelector("#output4"); 
+
+function passCheck() {
+    console.log(yName.value + yPass.value); 
+
+
+    if (yPass.value.includes(yName.value) ) {
+        output4.innerText ="Password can't have name";
+    } else {
+        output4.innerText = "Okay password!";
+    }
+}
+
+btnCheck.addEventListener("click", passCheck);

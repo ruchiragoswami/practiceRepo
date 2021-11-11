@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +9,50 @@
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js" defer></script>
 </head>
+
 <body>
     <h1> November 11</h1>
     <label for="userInput"> Text here: <input type="text" id="userInput"></label>
 
-    <button class="btnText" value = "log"> Log </button>
-    <button class="btnText" value = "error" > Error </button>
-    <button class="btnText" value = "warn"> Warn </button>
+    <button class="btnText" value="log"> Log </button>
+    <button class="btnText" value="error"> Error </button>
+    <button class="btnText" value="warn"> Warn </button>
 
     <p id="outputP"> </p>
 
     <h2> API Question </h2>
-    <p> Here's an API, it can give two errors. Either 404, or 401. If the error is 404, show the user 'page not found' and if the error is 401, show the user 'you are not logged in'.</p>
+    <p> Here's an API, it can give two errors. Either 404, or 401. If the error is 404, show the user 'page not found'
+        and if the error is 401, show the user 'you are not logged in'.</p>
 
+    <p> https://mystery-api.kushanksriraj.repl.co/get</p>
     <button id="callApi"> Call Api </button>
-    
+
     <p id="outputR"> </p>
+
+    <h2> Question 3 </h2>
+
+    <p>Create a web app, which On the Click of a button fetches data from the provided API and from the data, displays
+        the item with the highest price on the screen, below the button. </p>
+
+    <p> https://mock-practice.prakhar10v.repl.co/items</p>
+
+    <p id="output3"></p>
+
+    <div id="q4">
+        <h2> Question 4 </h2>
+
+        <p> Create a web app, where I input my name, and then I input a password. If the password contains the input
+            name in it, Show an error message "Password can't have name".</p>
+
+        <label for="yName"> Your Name: <input type="text" id="yName"></label>
+
+        <label for="yPass"> Password: <input type="text" id="yPass"></label>
+
+        <button id="btnCheck"> Check </button>
+        <p id="output4"></p>
+
+
+    </div>
 </body>
+
 </html>
