@@ -19,3 +19,16 @@ circle.draw();
 console.log(circle.location); 
 console.log(circle.radius);
 
+// Factory function
+
+function createCircle(radius) {
+    return {
+        radius,
+        draw: function() {
+            console.log("draw in factory function. Radius is: " + radius);
+        }
+    }
+}
+
+const circle2 = createCircle(2); 
+circle2.draw(); 
