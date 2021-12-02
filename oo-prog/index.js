@@ -23,7 +23,7 @@ console.log(circle.radius);
 
 function createCircle(radius) {
     return {
-        radius,
+        radius: radius,
         draw: function() {
             console.log("draw in factory function. Radius is: " + radius);
         }
@@ -32,3 +32,16 @@ function createCircle(radius) {
 
 const circle2 = createCircle(2); 
 circle2.draw(); 
+console.log(circle2.radius);
+
+// Constructor function 
+
+function Circle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log("draw in constructor function. Radius is: " + radius);
+    }
+}
+
+const another = new Circle(4);
+another.draw(); 
