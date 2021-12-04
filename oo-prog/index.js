@@ -45,3 +45,5 @@ function Circle(radius) {
 
 const another = new Circle(4);
 another.draw(); 
+
+// In javaScript, functions are object
