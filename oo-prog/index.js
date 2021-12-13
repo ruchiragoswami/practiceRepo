@@ -95,3 +95,13 @@ const circle4 = new SomeCircle(11);
 
 circle4.location = {x: 1}; 
 circle4['age'] = { years: 500}; 
+
+for (let key in circle4) {
+    console.log(key); 
+}
+
+for (let key in circle4) {
+    if (typeof circle4[key] !== 'function') {
+        console.log(key, circle4[key]);
+    }
+}
