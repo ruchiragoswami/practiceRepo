@@ -82,3 +82,16 @@ Take Away Lesson from the exercise on line 55 to 74:
 Primitives are copied by their value, objects are copied by their reference
 
 */
+
+function SomeCircle(radius) {
+    this.radius = radius;
+    this.draw = function() {
+        console.log("This is 'SomeCircle' ");
+    }
+}
+
+const circle4 = new SomeCircle(11); 
+// Dot notation and bracket notation
+
+circle4.location = {x: 1}; 
+circle4['age'] = { years: 500}; 
