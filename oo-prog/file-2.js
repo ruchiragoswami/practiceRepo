@@ -43,6 +43,41 @@ let welcome = function checkAge() {
 let welcome2 = (age < 25 ) ? 
     () => console.log('bramhacharyashram') :
     () => console.log('Oter Ashram'); 
+// welcome2();
+
+let findAshram = () => {
+    if (age < 25) {
+        console.log("You are in Brahmacharyashram");
+    } else if (age >=26 && age <=50) {
+        console.log("you are in Grihasthaashram"); 
+    } else {
+        console.log('other'); 
+    }
+}
+
+findAshram() ;
+
+/*  
+Arrow functions come in two flavours, with curly braces and without curly braces. 
+Without curly braces : returns the result
+With curly braces : multiple statements & explicit return the result
+*/
+
+// Task Rewrite with arrow function
+
+let ask = (question, yes, no) => (confirm(question)) ? yes() : no();
+
+// function ask(question, yes, no) {
+//     if(confirm(question) ) {
+//         yes();
+//     } else {
+//         no();
+//     }
+// }
 
 
-welcome2();
+ask(
+    "Do you agree?", 
+    () => alert('You agreed.') ,
+    () => alert('You cancelled the execution')
+)
