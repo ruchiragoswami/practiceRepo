@@ -11,9 +11,21 @@
     <h1> JavaScript Practice </h1>
     <script> 
     // Destructuring 
-     let arr = ["John", "Smith"]; 
-     let [firstname, lastname] = arr; 
-    
+    let arr = ["John", "Smith"]; 
+    let [firstname, lastname] = arr; 
+    console.log(firstname); 
+    console.log(lastname); 
+
+    let arr2 = ["Jane", "Doe"];
+    let [givenName, surname] = "Jane Doe".split(' '); 
+    console.log(givenName); 
+    console.log(surname) ;
+
+    let fname = arr2[0];
+    let lname = arr2[1]; 
+
+    console.log(fname + ' , ' + lname); 
+
     
     
     
