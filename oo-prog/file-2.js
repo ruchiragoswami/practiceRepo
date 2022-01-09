@@ -81,3 +81,9 @@ ask(
     () => alert('You agreed.') ,
     () => alert('You cancelled the execution')
 )
+
+// Task 2
+
+const divideByTwo = (num1) => console.log(num1/2);
+divideByTwo(4); 
+divideByTwo(16); 
