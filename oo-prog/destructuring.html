@@ -25,7 +25,21 @@
     let lname = arr2[1]; 
 
     console.log(fname + ' , ' + lname); 
+    
+    // Ignore elements using commas
 
+    let [fname1, , title] = ['Julius', 'Caesar' , 'Consul', "of the Roman Republic"]
+    console.log(title);  // second element skipped
+
+    // Works with any iterables on the right side
+
+    let [a, b, c ]= "1234"; 
+    console.log(c); 
+
+    let [one, two, three] = new Set([1, 2, 3]); 
+    console.log(two); 
+
+    
     
     
     
