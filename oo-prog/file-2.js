@@ -87,3 +87,4 @@ ask(
 const divideByTwo = (num1) => console.log(num1/2);
 divideByTwo(4); 
 divideByTwo(16); 
+
