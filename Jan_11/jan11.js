@@ -57,11 +57,24 @@ isBigger(5,4);
 isBigger(1, 34);
 isBigger(78, 12);
 
-*/ 
+
 
 //  How would you write this with the least amount of characters
 
 const Add22andReturn = (param1) => param1 + 22;
 console.log(Add22andReturn(22)); 
 console.log(Add22andReturn(1));
+
+
+*/ 
+
+const printSomethingAndReturn = (a) => {
+    console.log('squaring a.....')
+    return a * a
+  }
+  console.log(printSomethingAndReturn(2));
+
+  const giveMeAnObject = (a) => ({ value: a })
+
+console.log(giveMeAnObject(5))
 
