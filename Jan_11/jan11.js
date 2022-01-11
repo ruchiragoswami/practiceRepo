@@ -66,7 +66,7 @@ console.log(Add22andReturn(22));
 console.log(Add22andReturn(1));
 
 
-*/ 
+
 
 const printSomethingAndReturn = (a) => {
     console.log('squaring a.....')
@@ -78,3 +78,16 @@ const printSomethingAndReturn = (a) => {
 
 console.log(giveMeAnObject(5))
 
+*/ 
+
+// Default parameters
+ 
+const defualtEx = (a , b=4) => a +b;
+
+console.log(defualtEx(4));
+
+console.log(defualtEx(8)); 
+
+console.log(defualtEx(6,7));
+
+// Default values must be given from the right hand side 
