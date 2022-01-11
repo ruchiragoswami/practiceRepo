@@ -16,7 +16,7 @@ const obj2 = { a: 3, b: 4 }
 obj = obj2 
 // Yes, assignment to a constat variable
 
-*/ 
+
 
 // Will we get an error?
 
@@ -35,3 +35,14 @@ const isOne = (num) => num == 1;
 console.log(isOne(14));
 console.log(isOne(1));
 console.log(isOne(6-5));
+*/ 
+
+// Arrow Funcions To be run directly on console. They need a console.log statement in order to run here
+
+const checkOne = (a) => a===1 ? true : false;
+checkOne(3);
+// false
+checkOne(1);
+// true
+checkOne (9-8);
+// true
