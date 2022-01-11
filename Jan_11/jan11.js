@@ -35,7 +35,7 @@ const isOne = (num) => num == 1;
 console.log(isOne(14));
 console.log(isOne(1));
 console.log(isOne(6-5));
-*/ 
+
 
 // Arrow Funcions To be run directly on console. They need a console.log statement in order to run here
 
@@ -46,3 +46,22 @@ checkOne(1);
 // true
 checkOne (9-8);
 // true
+
+
+
+// Arrow Function with more than one parameter
+
+const isBigger = (a,b) => a > b ? console.log(a + " is greater than " + b ) : console.log(a + " is lesser than " + b);
+
+isBigger(5,4);
+isBigger(1, 34);
+isBigger(78, 12);
+
+*/ 
+
+//  How would you write this with the least amount of characters
+
+const Add22andReturn = (param1) => param1 + 22;
+console.log(Add22andReturn(22)); 
+console.log(Add22andReturn(1));
+
