@@ -26,3 +26,12 @@ const array = [1, 2, 3, 4]
 array.push(55)
 
 // No error, it will return 5, the length of array. If console logged, it will give the items in the array
+
+const getNum = () => 2
+console.log(getNum);
+console.log(getNum()); 
+
+const isOne = (num) => num == 1;
+console.log(isOne(14));
+console.log(isOne(1));
+console.log(isOne(6-5));
