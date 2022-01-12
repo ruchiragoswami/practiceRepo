@@ -11,6 +11,14 @@ const mergeArray  = (x, y) =>  { [...x, ...y];
 mergeArray(arr1, arr2); 
 
 
+
+const mergedArray = (...rest) => {
+    rest.map(arrg => {
+        
+    })
+}
+
+
 /*
 const toSentenceCase = (str => {
 str.split(' ').map(i) => i[0]
