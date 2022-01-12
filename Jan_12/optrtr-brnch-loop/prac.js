@@ -55,10 +55,24 @@ clickQ2.addEventListener('click', checkOdd);
 
 const num11 = 129;
 const num12 = 251;
-// const array13 = [];
-// array13.push(num11); 
-// array13.push(num12); 
-// console.log(array13); 
 
 console.log("max number is: " + Math.max(num11, num12)); 
 console.log("min number is: " + Math.min(num11, num12) ); 
+
+//Question 4-  Write a program to find the maximum out of three given numbers. The numbers are num1=8, num2=23 and num3=17.
+
+const num41 = 8;
+const num42= 23;
+const num43 = 17;
+
+const maxNum4 = (a, b, c) => {     
+    console.log(Math.max(a, b, c) + " max number in answer4" )
+} 
+
+const minNum = (a, b, c) => {
+    console.log(Math.min(a, b, c) + " min number in asnwer4");
+}
+
+maxNum4(num41, num42, num43); 
+minNum(num42, num42, num43); 
+
