@@ -126,3 +126,19 @@ spreadExample(obj)
 const oddOrEven = (num) => (num % 2 === 0 ? 'even' : 'odd'); 
 oddOrEven(29);
 oddOrEven(20);
+
+/*
+Rahul Bhoir7:27 AM
+const mergedArr = (...args) => {
+  return [...args].flat();
+};
+*/
+
+/*
+Sreemannarayana Ikkurthi7:28 AM
+const mergeArray = (...rest) => {
+    return rest.reduce((currentArray, returnArray) => [ ...currentArray, ...returnArray], [])
+}
+console.log(mergeArray([1,2,3], [4,5,6], [7, 8, 9]))
+*/
+
