@@ -12,27 +12,40 @@ const addAll = (a, b , c, d, e ) => {
 
 addAll(num1, num2, num3, num4, num5);
 
-console.log('end'); 
 
 // Write a program to take a number input from user and determine whether the number is odd or even.
-let inputQ2 = document.querySelector("#inputQ2"); 
+let givenInput = document.querySelector("#inputQ2"); 
 let output2 = document.querySelector("#output2");
 let clickQ2 = document.querySelector("#clickQ2"); 
 
+let myNum = givenInput.value;
 
-const oddOREven = inputQ2 => {
-
-    let checkNum1 = inputQ2.value; 
-
-    if(checkNum1 % 2 !== 0) { 
-        console.log('odd')
-    } else if(checkNum1 % 2 == 0) {
-        console.log('even'); 
+function checkOdd() {
+    let num = givenInput.value; 
+    if (num % 2 === 0) {
+        console.log('even');
     } else {
-        console.log('you came here'); 
+        console.log('odd'); 
     }
 }
 
+
+
+// const checkOdd = (myNum) => (myNum % 2 ===0 ? 'even' : 'odd'); 
+    
+   
+// const oddOREven = (givenInput) => {
+//     let checkNum = givenInput.value;
+     
+//     console.log(checkNum);
+//     if(checkNum % 2 !== 0) {  
+//         console.log('odd')
+        
+//     } else {
+//         console.log('even'); 
+//     }
+// }
+
 // oddOREven(inputQ2); 
 
-clickQ2.addEventListener('click', oddOREven); 
+clickQ2.addEventListener('click', checkOdd); 
