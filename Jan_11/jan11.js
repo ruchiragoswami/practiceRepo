@@ -78,7 +78,7 @@ const printSomethingAndReturn = (a) => {
 
 console.log(giveMeAnObject(5))
 
-*/ 
+
 
 // Default parameters
  
@@ -91,3 +91,38 @@ console.log(defualtEx(8));
 console.log(defualtEx(6,7));
 
 // Default values must be given from the right hand side 
+
+
+// Rest and Spread
+
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const spreadExample2 = ([first, second, ...rest]) => {
+  console.log(first, second, rest)
+}
+
+console.log(spreadExample2(array))
+
+console.log(spreadExample2([...array, 11, 12, 13]))
+console.log(spreadExample2([...array]))
+
+*/ 
+
+// Spread can rename parameters
+
+
+/* How come we don't get 2,1 here? Code below
+
+const spreadExample = ({ b: bhaaloo, a: aaloo }) => {
+  console.log(aaloo, bhaaloo)
+}
+
+const obj = { a: 1, b: 2 }
+spreadExample(obj)
+
+// output 1 2
+
+*/
+
+const oddOrEven = (num) => (num % 2 === 0 ? 'even' : 'odd'); 
+oddOrEven(29);
+oddOrEven(20);
