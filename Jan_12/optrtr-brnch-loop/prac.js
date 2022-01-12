@@ -49,3 +49,16 @@ function checkOdd() {
 // oddOREven(inputQ2); 
 
 clickQ2.addEventListener('click', checkOdd); 
+
+
+// Question 3- Write a program to find the maximum and minimum out of two given numbers. The numbers are num1=129 and num2=251.
+
+const num11 = 129;
+const num12 = 251;
+// const array13 = [];
+// array13.push(num11); 
+// array13.push(num12); 
+// console.log(array13); 
+
+console.log("max number is: " + Math.max(num11, num12)); 
+console.log("min number is: " + Math.min(num11, num12) ); 
