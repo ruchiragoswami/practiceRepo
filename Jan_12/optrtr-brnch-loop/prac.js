@@ -76,3 +76,42 @@ const minNum = (a, b, c) => {
 maxNum4(num41, num42, num43); 
 minNum(num42, num42, num43); 
 
+// Question 5- Write a program to find the minimum out of three given numbers. The numbers are num1=35, num2=29 and num3=46.
+
+const num51 = 35;
+const num52 = 29;
+const num53 = 46; 
+
+const findMin = (a,b,c) => {
+    console.log(Math.min(a,b,c) +" is answer 5. ");
+}
+
+findMin(num51, num52, num53); 
+
+// Question 6 - Write program to take a month as an input from the user and find out whether the month has 31 days or not.
+
+// const givenMonth = prompt('Enter any month, first three letters only');
+
+let monthInput = document.querySelector('#monthInput');
+let monthOutput = document.querySelector("#monthOutput"); 
+let checkDays = document.querySelector("#checkDays"); 
+
+function findDays() {
+    let givenMonth = monthInput.value.toUpperCase(); 
+    console.log(givenMonth) ; 
+    const days31 = ['jan', 'mar', 'may' , 'jul', 'aug', 'oct', 'dec']
+    const days30 = ['apr', 'jun', 'sep', 'nov']; 
+    const days28 = ['feb']; 
+
+   for (let i=0; i < days31.length; i++) {
+       if (givenMonth === i ){
+           console.log(givenMonth + " has 31 days"); 
+       }
+   }
+
+
+
+}
+
+
+checkDays.addEventListener('click', findDays);
