@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <h2> Question 3</h2>
     <p> Write a program to find the maximum and minimum out of two given numbers. The numbers are num1=129 and num2=251.
     </p>
 
@@ -19,6 +20,15 @@
 
     <p id="output"> </p>
 
+    <h2> Question 4 & 5 </h2>
+    <p> Write a program to find the maximum out of three given numbers. The numbers are num1=8, num2=23 and num3=17.  Here, I have modified the code to take numbers from user and find min and max in the same click. Question 4 & 5 clubbed together  </p>
+
+    <lable> num1 <input id="num1" type="number" /></lable> <br>
+    <lable> num2 <input id="num2" type="number"/></lable> <br> 
+    <lable> num3 <input id="num3" type="number"/></lable> <br> 
+
+    <button id="quest4"> Check Max </button>
+    <p id="output2"> </p>
 
 </body>
 
@@ -34,5 +44,23 @@ const checkMinMax = () => {
     // console.log(Math.min(inp1.value, inp2.value)  )    
 }
 btnCheck.addEventListener('click', checkMinMax );
+
+let num1 = document.querySelector('#num1');
+let num2 = document.querySelector('#num2');
+let num3 = document.querySelector('#num3'); 
+let check4 = document.querySelector('#quest4');
+let output2 = document.querySelector("#output2"); 
+
+const findMax = () => output2.innerText = ` Maximum number is ${Math.max( num1.value, num2.value, num3.value)} and Minimum number is ${Math.min(num1.value, num2.value, num3.value )} ` ; 
+
+
+
+check4.addEventListener('click', findMax);
+
+
+
+
+
+
 </script>
 </html>
