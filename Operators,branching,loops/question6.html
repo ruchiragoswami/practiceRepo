@@ -7,10 +7,40 @@
     <title> question 4</title>
 </head>
 <body>
-<h1> Question 3</h1>    
-<h2> </h2>
+<h1> Question 6 </h1>    
+<h2> Write program to take a month as an input from the user and find out whether the month has 31 days or not.</h2>
 
+<label>  Enter Month:  <input id="inpMonth" type="text" placeholder="First Three Letters ONLY" ></label>
 
-
+<button id="checkMonth">  check Month </button>
+<p id="output"> </p>
 </body>
+
+<script> 
+let inpMonth = document.querySelector("#inpMonth");
+let checkMonth = document.querySelector("#checkMonth");
+let output = document.querySelector("#output"); 
+
+
+
+const daysInMonth = () => {
+    let givenMonth = inpMonth.value.toLowerCase();
+    let ourMonths = ['jan', 'mar', 'may', 'jul', 'aug', 'oct', 'dec']; 
+    let noMonths = ['feb', 'apr', 'jun','sep', 'nov' ]; 
+
+    if (ourMonths.includes(givenMonth) ) {     
+        output.innerText = `${inpMonth.value} has 31 days.`; 
+    } else if (noMonths.includes(givenMonth)){       
+        output.innerText = `${inpMonth.value} has less than 31 days`; 
+    }   else { 
+        output.innerText = `Please enter a valid month`;
+    }
+}
+
+
+checkMonth.addEventListener('click', daysInMonth); 
+
+</script>
+
+
 </html>
