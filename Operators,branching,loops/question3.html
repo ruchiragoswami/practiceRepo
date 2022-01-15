@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question 3 </title>
+</head>
+
+<body>
+    <p> Write a program to find the maximum and minimum out of two given numbers. The numbers are num1=129 and num2=251.
+    </p>
+
+    <lable> Enter first number: <input id='inp1' type="number" /> </lable>
+    <lable> Enter second number: <input id='inp2' type="number" /></lable>
+
+    <button id="btnCheck"> Check </button>
+
+    <p id="output"> </p>
+
+
+</body>
+
+
+<script> 
+let inp1 = document.querySelector('#inp1'); 
+let inp2 = document.querySelector('#inp2');
+let btnCheck = document.querySelector('#btnCheck');
+let output = document.querySelector('#output'); 
+
+const checkMinMax = () => { 
+    output.innerText = `Min number is ${Math.min(inp1.value, inp2.value)} and Max number is ${Math.max(inp1.value, inp2.value)}`;
+    // console.log(Math.min(inp1.value, inp2.value)  )    
+}
+btnCheck.addEventListener('click', checkMinMax );
+</script>
+</html>
