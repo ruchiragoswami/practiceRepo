@@ -24,4 +24,6 @@ function calcArea()  {
 }
 
 
+
+
 btnArea.addEventListener("click", calcArea); 
