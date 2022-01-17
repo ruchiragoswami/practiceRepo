@@ -31,6 +31,56 @@
             Your output should look something like this 1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, Buzz, 11, Fizz, 13, 14,
             FizzBuzz, 16, 17 .....</p>
     </div>
+
+<div>
+
+    <p> 
+        Atul's solution 
+        
+        function fizzBuzz() {
+            const ansArray = [];
+            let arrayIndex = 0;
+            for (let i = 1; i <= 100; i++) {
+              if (i % 3 === 0 && i % 5 === 0) {
+                ansArray[arrayIndex] = "FizzBuzz";
+                arrayIndex++;
+              } else if (i % 5 === 0) {
+                ansArray[arrayIndex] = "Buzz";
+                arrayIndex++;
+              } else if (i % 3 === 0) {
+                ansArray[arrayIndex] = "Fizz";
+                arrayIndex++;
+              } else {
+                ansArray[arrayIndex] = i;
+                arrayIndex++;
+              }
+            }
+            return ansArray;
+          }
+          
+          console.log(fizzBuzz());
+        </p>
+        
+        <p> 
+        
+          Saad's solution
+          function fizzBuzz() {
+            let fizzBuzzArray = [];
+            for (let i = 1; i <= 100; i++) {
+              if (i % 15 === 0) fizzBuzzArray.push("FizzBuzz")
+              else if (i % 5 === 0) fizzBuzzArray.push("Buzz")
+              else if (i % 3 === 0) fizzBuzzArray.push("Fizz")
+              else fizzBuzzArray.push(i)
+              }
+            console.log(fizzBuzzArray);
+          }
+          
+          fizzBuzz();
+        
+        </p>
+</div>
+
+
 </body>
 
 <script>
@@ -77,6 +127,11 @@
 
 
 
+fizzBuzz();
+
+
+
 </script>
 
 </html>
+
