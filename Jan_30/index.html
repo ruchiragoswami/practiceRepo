@@ -36,15 +36,32 @@
 const strLength = (myName, checkLength) => checkLength(myName); 
 
 const checkLength = someName => {
-    let x = someName.length;
-    console.log(`OMG!  My Name "${someName}" is ${x} chars long. And this is written in arrow function! `);
+    let x = someName.length;    
+    console.log(`OMG!  My Name is ${x} chars long.`);
+    return x;
 }
 
-strLength('Ruchirang', checkLength );
+strLength('Bartholomew Beauregard', checkLength);
 
-strLength('Ruchi', checkLength); 
-strLength('Benedict' , checkLength);
 
+// const printName = (nameLength) => console.log(`OMG! My name is ${nameLength} chars long! `)
+
+
+
+// strLength('Ruchirang', printName );
+// strLength('Ruchi', printName); 
+// strLength('Benedict', printName);
+// strLength('Bartholomew Beauregard', printName);
+
+
+
+
+
+
+
+
+// const strLength = (myName, cb) => {
+//     const lengthOfName = name.length; 
 
 </script>
 
