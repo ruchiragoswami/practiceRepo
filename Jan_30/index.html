@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyn await pracitce
+
+    </title>
+</head>
+<body>   
+<h1> Jan 30</h1>
+
+</body>
+
+<script>
+
+    // challenge 1- regular function 
+
+// function strLength(myName, checkLength) {   
+//     checkLength(myName);
+// }
+
+// function checkLength(someName) {
+//         let x=  someName.length;       
+//         console.log(`OMG! My name is ${x} characters long!`);
+//     }
+
+    // checkLength('benedict');
+    // checkLength('ruchirang'); 
+
+
+
+// challenge 2- arrowfunction 
+
+const strLength = (myName, checkLength) => checkLength(myName); 
+
+const checkLength = someName => {
+    let x = someName.length;
+    console.log(`OMG!  My Name "${someName}" is ${x} chars long. And this is written in arrow function! `);
+}
+
+strLength('Ruchirang', checkLength );
+
+strLength('Ruchi', checkLength); 
+strLength('Benedict' , checkLength);
+
+
+</script>
+
+
+
+
+</html>
