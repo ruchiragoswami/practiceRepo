@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,50 +9,67 @@
 
     </title>
 </head>
-<body>   
-<h1> Jan 30</h1>
+
+<body>
+    <h1> Jan 30</h1>
 
 </body>
 
 <script>
-
     // challenge 1- regular function 
 
-// function strLength(myName, checkLength) {   
-//     checkLength(myName);
-// }
+    // function strLength(myName, checkLength) {   
+    //     checkLength(myName);
+    // }
 
-// function checkLength(someName) {
-//         let x=  someName.length;       
-//         console.log(`OMG! My name is ${x} characters long!`);
-//     }
+    // function checkLength(someName) {
+    //         let x=  someName.length;       
+    //         console.log(`OMG! My name is ${x} characters long!`);
+    //     }
 
     // checkLength('benedict');
     // checkLength('ruchirang'); 
 
 
 
-// challenge 2- arrowfunction 
+    // challenge 2- arrowfunction 
 
-const strLength = (myName, checkLength) => checkLength(myName); 
+    const strLength = (myName, checkLength) => checkLength(myName);
+    const checkLength = someName => {
+        let x = someName.length;
+        console.log(`OMG!  My Name is ${x} chars long.`);
+        return x;
+    }
+    // strLength('Bartholomew Beauregard', checkLength);
 
-const checkLength = someName => {
-    let x = someName.length;    
-    console.log(`OMG!  My Name is ${x} chars long.`);
-    return x;
+
+    // challege 3 
+
+   const yesKill = console.log(`headphones`);
+   const noKill = console.log(`alive`);
+
+    // function willThanosKillMe(someName1, cbl, cb2) {
+    //     if (someName1.length % 2 === 0) {
+    //         cb1(someName1.length);
+    //     } else {
+    //        cb2(someName1.length);
+    //     }
+    // }
+
+    // willThanosKillMe('Ruchira', noKill, yesKill);
+
+
+    for(let i=0;i<3;i++){
+    setTimeout(()=>console.log(i), 6000);
 }
 
-strLength('Bartholomew Beauregard', checkLength);
+
+//https://github.com/rutvikpumak/boostmat-ui  ****Rutwik's 
 
 
-// const printName = (nameLength) => console.log(`OMG! My name is ${nameLength} chars long! `)
 
 
-
-// strLength('Ruchirang', printName );
-// strLength('Ruchi', printName); 
-// strLength('Benedict', printName);
-// strLength('Bartholomew Beauregard', printName);
+    
 
 
 
@@ -60,9 +78,51 @@ strLength('Bartholomew Beauregard', checkLength);
 
 
 
-// const strLength = (myName, cb) => {
-//     const lengthOfName = name.length; 
 
+
+    // const strLength = (myName, cb) => {
+    //     let x = myName.length;
+    //     cb(x); 
+    // }
+
+    // const getName = (someString) => {
+    //     console.log(`Omg`)
+    // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // const printName = (nameLength) => console.log(`OMG! My name is ${nameLength} chars long! `)
+
+
+
+    // strLength('Ruchirang', printName );
+    // strLength('Ruchi', printName); 
+    // strLength('Benedict', printName);
+    // strLength('Bartholomew Beauregard', printName);
+
+
+
+
+
+
+
+
+    // const strLength = (myName, cb) => {
+    //     const lengthOfName = name.length; 
 </script>
 
 
