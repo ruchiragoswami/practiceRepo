@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feb 01  </title>
+</head>
+<body>
+    <h1> Practice</h1>
+<script> 
+
+function strLength(myName, someCB) {
+ someCB(myName.length); 
+//  return someCB
+}
+
+function printName(someString) {
+    console.log(`OMG! My name is ${someString} long`)
+}
+
+strLength('Ruchirang', printName);
+
+// Challenge 2
+
+function willThanosKillMe(someName, noKill, yesKill) {
+    if (someName.length % 2 === 0) {
+        noKill(); 
+    } else {
+        yesKill();
+    }
+}
+
+function noKill() {
+    console.log('yay! I am alive');
+}
+
+function yesKill() {
+    console.log("give my stuff to my sister");
+}
+
+willThanosKillMe('Ruchir', noKill, yesKill); 
+
+// challenge 3
+
+function delayType (someMessage, lag) {
+    setTimeout( () => {console.log(someMessage)}, lag); 
+}
+
+delayType("hello, hello, Ruchi", 2000);
+
+
+const printAfterDelay = (msg, delay1) => {
+    setTimeout(console.log(msg), delay1); 
+}
+
+printAfterDelay("ruchi, message2", 5000);
+
+setTimeout(console.log('trial 1 - after 6 secons '), 6000);
+setTimeout( () => {console.log('this wil be after 6 seconds, lets see ')}, 6000);
+
+clearTimeout(delayType);
+
+
+</script>
+
+
+</body>
+</html>
