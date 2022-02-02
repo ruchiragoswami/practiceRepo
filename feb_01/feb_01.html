@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>feb 01  </title>
+    <title>feb 01 </title>
 </head>
+
 <body>
     <h1> Practice</h1>
-<script> 
-
+    <script>
+        /*
 function strLength(myName, someCB) {
  someCB(myName.length); 
 //  return someCB
@@ -62,8 +64,51 @@ setTimeout( () => {console.log('this wil be after 6 seconds, lets see ')}, 6000)
 clearTimeout(delayType);
 
 
-</script>
+// Hw 6.1
+
+function intervalFunc (someMessage, someTime) {
+    setInterval( () => {console.log(someMessage)}, someTime ); 
+}
+
+// intervalFunc("mogambo khush hua", 3000); 
+// clearInterval(intervalFunc);
+
+
+
+function stopInterval() {
+    clearInterval(intervalFunc);
+}
+
+stopInterval(); 
+*/
+
+        // 6.2 
+
+        function takeNum1(someNum) {        
+            // console.log('countdown begins');    
+            for (let i = someNum; i >= 0; i--) {                
+                console.log(i);
+                if (i === 0) {
+                console.log("Bang Bang");
+            }
+            } 
+        }
+        // takeNum1(10);
+
+        // Write a function that takes a number. Then print a countdown from that number to 0. At zero print "Bang Bang!" 
+        const takeNum = (num)  => { 
+            for (let i= num; i >= 0 ; i--) {
+                console.log(i); 
+                if (i===0) {
+                    console.log(`Bang Bang`); 
+                }
+            }
+        }
+        takeNum(10); 
+
+    </script>
 
 
 </body>
+
 </html>
