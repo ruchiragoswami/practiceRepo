@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arr = [{
+                name: "Jay",
+                age: 60
+            },
+            {
+                name: "Gloria",
+                age: 36
+            },
+            {
+                name: "Manny",
+                age: 16
+            },
+            {
+                name: "Joe",
+                age: 9
+            }
+        ]
+
+        /* 
+        Your output should be: 121  ( because 60+36+16+9)
+        */
+
+        const totalAge = arr.reduce((acc, cur) => acc = acc + cur.age, 0)
+
+        console.log(totalAge);
+
+
+        const family = [{
+                name: 'Tanay',
+                haveCycle: true
+            },
+            {
+                name: 'Akanksha',
+                haveCycle: false
+            },
+            {
+                name: 'Tanvi',
+                haveCycle: true
+            },
+            {
+                name: 'Kanak',
+                haveCycle: false
+            }
+        ];
+
+
+        // Your output should be: ['Tanay', 'Tanvi']
+
+        //     let cycleArr = []; 
+        // family.filter(obj => {
+        //             if (obj.hasCycle) {
+        //                 cycleArr.push(obj.name)
+        //             }
+
+        //         })
+
+        //         console.log(cycleArr);
+
+
+
+
+        const arr = ["You", "all", "are", "rockstars"];
+
+            // Convert it to object, key should be index, and value should be array
+        // Your output should be: {
+        //     '0': "You",
+        //     '1': "all",
+        //     '2': "are",
+        //     '3': "rockstars"
+        // }
+
+        const arr = ["Violet", "Indigo", "Blue", "Green", "Yellow", "Orange", "Red"]
+
+
+// Your output should be: 
+// Violet-Indigo-Blue-Green-Yellow-Orange-Red
+
+
+/*const input = [
+['a', 'b', 'c'],
+    ['c', 'd', 'e'],
+    ['e', 'd', 'f'],
+  ]; */
+//   Your output should be: ['a', 'b', 'c', 'c', 'd', 'e', 'e', 'd', 'f']
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
