@@ -66,70 +66,127 @@ clearTimeout(delayType);
 
 // Hw 6.1
 
-function intervalFunc (someMessage, someTime) {
-    setInterval( () => {console.log(someMessage)}, someTime ); 
-}
-
-// intervalFunc("mogambo khush hua", 3000); 
-// clearInterval(intervalFunc);
-
-
-
-function stopInterval() {
-    clearInterval(intervalFunc);
-}
-
-stopInterval(); 
 */
 
-        // 6.2 
-
-        function takeNum1(someNum) {        
-            // console.log('countdown begins');    
-            for (let i = someNum; i >= 0; i--) {                
-                console.log(i);
-                if (i === 0) {
-                console.log("Bang Bang");
-            }
-            } 
+        function intervalFunc(someMessage, someTime) {
+            setInterval(() => {
+                console.log(someMessage)
+            }, someTime);
         }
+
+        // intervalFunc("mogambo khush hua", 3000); 
+        clearInterval(intervalFunc);
+
+
+
+        function stopInterval() {
+            clearInterval(intervalFunc);
+        }
+
+        stopInterval();
+        // // 6.2 
+
+        // function takeNum1(someNum) {        
+        //     // console.log('countdown begins');    
+        //     for (let i = someNum; i >= 0; i--) {                
+        //         console.log(i);
+        //         if (i === 0) {
+        //         console.log("Bang Bang");
+        //     }
+        //     } 
+        // }
         // takeNum1(10);
 
         // Write a function that takes a number. Then print a countdown from that number to 0. At zero print "Bang Bang!" 
-        const takeNum = (num)  => { 
-            for (let i= num; i >= 0 ; i--) {
-                console.log(i); 
-                if (i===0) {
-                    console.log(`Bang Bang`); 
-                }
-            }
+        // const takeNum = (num) => {
+        //     for (let i = num; i >= 0; i--) {
+        //         console.log(i);
+        //         if (i === 0) {
+        //             console.log(`Bang Bang`);
+        //         }
+        //     }
+        // }
+        // takeNum(10); 
+
+    //    function cntDwn() {
+    //         console.log(x);
+    //         x--;
+    //         if ( x < 0 ) {
+    //             console.log("done") 
+    //         }
+    //      }
+
+    //   function takeNum2 (cntDwn, num)  {
+    //         setInterval( cntDwn(num), 1000);
+
+    //     }
+        //  takeNum2(5);
+
+        //     for (let i = num; i >= 0; i--) {
+        //         console.log(i);
+        //         if (i === 0) {
+        //             console.log(`Bang Bang`);
+        //         }
+        //     }
+        // }
+        // let s;
+        // const fun = (num) => {
+        //     s = setInterval(
+        //         () => {
+        //             console.log(num);
+        //             num--;
+        //             if (num === -1) {
+        //                 clearInterval(s);
+        //                 console.log("Bang Bang");
+                        
+        //             }
+        //         },  1000,   num
+        //     );
+        // };
+        // fun(10);
+
+
+        // const arr = [1, 2, 3, 58, 5, 6, 24, 8, 15, 4];
+
+        // Your output should be:
+        // [1, 3, 3, 59, 5, 7, 25, 9, 15, 5]
+
+        /*
+        const arr = [1, 2, 3, 58, 5, 6, 24, 8, 15, 4];
+
+        function convertToEven(someArray) {
+            // someArray.map()
+
+            someArray.map( );
+            console.log(someArray); 
+
+            // for (i=0; i <= someArray.length; i++ ) {
+            //     let newEven = i + 1;
+              
+            //     someArray.push(newEven); 
+            //     return someArray;
+            //     console.log(newEven); 
+            // }
         }
-        takeNum(10); 
+
+        convertToEven(arr); 
+        */
+
+        const countdown = (num) => {
+         let x=    setInterval (() => {
+                 console.log(num); 
+                 num-- ;
+                 if (num < 0) {
+                     console.log("Bang bang");
+                     clearInterval(x);
+                    }
+            },
+                   1000)
+        }
+
+        countdown(5);
 
 
-// const arr = [1, 2, 3, 58, 5, 6, 24, 8, 15, 4];
-
-// Your output should be:
-// [1, 3, 3, 59, 5, 7, 25, 9, 15, 5]
-
-const arr = [1, 2, 3, 58, 5, 6, 24, 8, 15, 4];
-
-function convertToEven(someArray) {
-    // someArray.map()
-
-    someArray.map( );
-    console.log(someArray); 
-
-    // for (i=0; i <= someArray.length; i++ ) {
-    //     let newEven = i + 1;
-      
-    //     someArray.push(newEven); 
-    //     return someArray;
-    //     console.log(newEven); 
-    // }
-}
-
-convertToEven(arr); 
 
     </script>
 
