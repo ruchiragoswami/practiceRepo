@@ -1,26 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    
-<script> 
-const ruchi = {
-    myMother: "Mina",
-    age: 32
-}
 
-const arjav = {...ruchi, age: ruchi.age-4 }
-   
-const colors = ['pink', 'orange', 'navy-blue', 'green', 'teal'];
-const colors2 = [...colors, 'yellow', 'cyan'];
+    <script>
+        const ruchi = {
+            myMother: "Mina",
+            age: 32
+        }
 
-</script>
+        const arjav = {
+            ...ruchi,
+            age: ruchi.age - 4
+        }
+
+        const colors = ['pink', 'orange', 'navy-blue', 'green', 'teal'];
+        const colors2 = [...colors, 'yellow', 'cyan'];
+
+        //example 2
+        const cat = {
+            name: "Tom",
+            legs: 4,
+            tail: 1,
+            sound: "meow"
+        }
+        console.log(cat);
+
+        const tiger = {
+            ...cat,
+            name: "Vittal",
+            sound: "roar",
+            abode: "den"
+        };
+        console.log(tiger);
+
+        //example3
+        const birthdays = (person) => ({
+            ...person,
+            age: person.age + 1
+        })
+        birthdays(ruchi);
+
+        //example4 
+
+        const wildAnimal = (someAnimal) => ({
+            ...someAnimal,
+            legs: someAnimal.legs + 1
+        })
+
+        wildAnimal(tiger); 
+
+        //example5
+        const isLessThanTen = (num) =>  num < 10;
+            // let lesser = true; 
+            // let smallArray = []
+            // if (num < 10 ) {
+            //     smallArray.push(num);
+            //     console.log(`${num} is less than 10`)
+            // } 
+            // console.log(smallArray);
+        
+
+        const array1 = [1, 2,  5, 10, 39, 20, 4, 6, 99, 23 ]
+
+        array1.filter(isLessThanTen); 
+
+
+    </script>
 
 
 </body>
+
 </html>
