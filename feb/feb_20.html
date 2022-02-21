@@ -9,11 +9,13 @@
 </head>
 
 <body>
+    <h1> Functional Programming </h1>
 
     <script>
         const ruchi = {
             myMother: "Mina",
-            age: 32
+            age: 32,
+            birthYear: 1990
         }
 
         const arjav = {
@@ -46,7 +48,13 @@
             ...person,
             age: person.age + 1
         })
-        birthdays(ruchi);
+        const ruchiThisYear = birthdays(ruchi);
+
+        //example3.1
+        // const calcAge = (person) => ({...person, runningYear: 2022- person.birthYear});
+
+        // calcAge(ruchi);
+
 
         //example4 
 
@@ -55,24 +63,90 @@
             legs: someAnimal.legs + 1
         })
 
-        wildAnimal(tiger); 
+        wildAnimal(tiger);
 
         //example5
-        const isLessThanTen = (num) =>  num < 10;
-            // let lesser = true; 
-            // let smallArray = []
-            // if (num < 10 ) {
-            //     smallArray.push(num);
-            //     console.log(`${num} is less than 10`)
-            // } 
-            // console.log(smallArray);
-        
-
-        const array1 = [1, 2,  5, 10, 39, 20, 4, 6, 99, 23 ]
-
-        array1.filter(isLessThanTen); 
+        const isLessThanTen = (num) => num < 10;
+        // let lesser = true; 
+        // let smallArray = []
+        // if (num < 10 ) {
+        //     smallArray.push(num);
+        //     console.log(`${num} is less than 10`)
+        // } 
+        // console.log(smallArray);
 
 
+        const array1 = [1, 2, 5, 10, 39, 20, 11, 4, 6, 99, 23, 49, 53, 54]
+
+        const output1 = array1.filter(isLessThanTen);
+
+        const isOdd = (num) => num % 2;
+        const outputOdd = array1.filter(isOdd);
+
+        const isEven = (num) => num % 2 === 0;
+        const outputEven = array1.filter(isEven);
+
+        console.log("Odd number are: " + outputOdd);
+        console.log("Even numbers are: " + outputEven);
+
+        const greaterThanTen = (num) => num > 10;
+        console.log(array1.filter(greaterThanTen));
+
+        const lessThanFifty = array1.filter(num => num < 50)
+
+        console.log("Array with numbers less than 50: " + lessThanFifty);
+
+
+        const outputForReduce1 = array1.reduce((acc, curr) => {
+            acc = acc + curr;
+            return acc;
+        }, 0)
+
+        console.log("Total sum is: " + outputForReduce1);
+
+        //Find Maximum number in the array        
+
+        const outputForMax = array1.reduce( (max, curr) => {
+            if (max < curr) {
+                max = curr;              
+            }
+            return max;
+        }, 0 )
+
+        console.log(outputForMax);
+
+
+        //More Examples
+
+        const users = [{
+                firstname: "akshay",
+                lastname: "saini",
+                age: 26
+            },
+            {
+                firstname: "mickey",
+                lastname: "mouse",
+                age: 85
+            },
+            {
+                firstname: "elon",
+                lastname: "musk",
+                age: 52
+            },
+            {
+                firstname: "deepika",
+                lastname: "padukone",
+                age: 26
+            }
+        ]
+
+        const youngerThan30 = users.filter((x) => {
+            if (x.age < 30) {
+                return x.firstname;
+            }
+        });
+
+        console.log(youngerThan30);
     </script>
 
 
