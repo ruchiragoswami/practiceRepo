@@ -106,17 +106,18 @@
 
         //Find Maximum number in the array        
 
-        const outputForMax = array1.reduce( (max, curr) => {
+        const outputForMax = array1.reduce((max, curr) => {
             if (max < curr) {
-                max = curr;              
+                max = curr;
             }
             return max;
-        }, 0 )
+        }, 0)
 
         console.log(outputForMax);
 
 
         //More Examples
+        // Assume that the users data is coming from API
 
         const users = [{
                 firstname: "akshay",
@@ -140,13 +141,33 @@
             }
         ]
 
-        const youngerThan30 = users.filter((x) => {
-            if (x.age < 30) {
-                return x.firstname;
-            }
-        });
+        // Get the first and last name of each user from the above object 
+        const outputFullNames = users.map((x) => x.firstname + " " + x.lastname);
 
-        console.log(youngerThan30);
+        console.log(outputFullNames);
+
+        // How many users have a particular age? That is  how many people are of same age. 
+        //Output should look like { 26: 2, 85: 1, 52: 1}
+
+
+        const outputUniqueAge = users.reduce((acc, curr) => {
+            if (acc[curr.age]) {
+                acc[curr.age] = acc[curr.age] + 1;
+            } else {
+                acc[curr.age] = 1;
+            }
+            return acc;
+        }, {});
+
+        console.log(outputUniqueAge);
+
+        // return the first names of the users whose age is less than 30
+
+
+        const youngerThan30 = users.filter( (x) => x.age <30).map( x => x.firstname) ;
+
+        console.log(youngerThan30); 
+        console.log(`Users younger than 30 are ${youngerThan30}`);
     </script>
 
 
