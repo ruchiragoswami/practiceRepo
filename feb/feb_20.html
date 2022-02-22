@@ -127,7 +127,7 @@
             {
                 firstname: "mickey",
                 lastname: "mouse",
-                age: 85
+                age: 15
             },
             {
                 firstname: "elon",
@@ -163,11 +163,35 @@
 
         // return the first names of the users whose age is less than 30
 
-
         const youngerThan30 = users.filter( (x) => x.age <30).map( x => x.firstname) ;
 
         console.log(youngerThan30); 
         console.log(`Users younger than 30 are ${youngerThan30}`);
+
+        // try the above question using reduce, that is, return the first names of the users whose age is less than 30
+        // 
+        const reduceLessThan30 = users.reduce ((acc, curr) =>{
+            if ( curr.age <30)   {            
+            acc.push(curr.firstname)                                 
+            } 
+            return acc;   
+        } , [])
+           
+    console.log("Look here: " + reduceLessThan30);
+
+
+    // const reduceLessThan30 = users.reduce ((acc, curr) =>{
+    //         if ( curr.age <30)   {            
+    //         acc.push(curr.firstName)                                 
+    //         } 
+    //         return acc;   
+    //     } , [])
+           
+    // console.log("Look here for your values: " + reduceLessThan30);
+        
+   
+
+        // console.log(reduceLessThan30); 
     </script>
 
 
