@@ -222,17 +222,24 @@
         // Output should look like odd: 55, even : 88 
 
         const sumOfBoth = array3.reduce( (acc, curr) => {
+            let reducedObj=  { odd: 0,  even: 0}
             if ( curr % 2) {
-                acc= acc + curr; 
-               return {odd: acc}
+               reducedObj.odd = acc + curr; 
+                // acc= acc + curr; 
+               return odd;
             } else {
-                acc = acc + curr;
-                return { even: acc}
+                reducedObj.even= acc + curr; 
+                // acc = acc + curr;
+                return even; 
             }
         },
          {} )
 
          console.log(sumOfBoth); 
+
+
+        
+
 
     </script>
 
