@@ -55,8 +55,19 @@ console.log(answer2);
 const array3 = [1, 2, 3, 58, 5, 6, 24, 8, 15, 4];
 
 const evenAndLessThanThree = num => num <= 8 && !(num %2) ;
-const answer3 = array3.filter(evenAndLessThanThree2);
+const answer3 = array3.filter(evenAndLessThanThree);
 console.log(answer3); 
+
+
+
+// 4. Given an array, write a function that takes in the given array and prints only the words which are more than 5 characters in length.
+// Your output should be: ['repeat']
+
+const array4 = [ 'eat', 'sleep', 'repeat', 'code']; 
+const wordsMoreThan5 = someString => someString.length > 5 ; 
+const answer4 = array4.filter(wordsMoreThan5);
+console.log(answer4); 
+
 
 
 // 5. Given an array. Write a function to get the sum of all elements which are greater than 50.
@@ -75,6 +86,32 @@ const array6 = [1, 2, 3, 7, 5, 6, 8, 9];
 const evenProd = (acc, curr) => curr % 2 === 0 ? acc * curr : acc;
 const answer6 = array6.reduce(evenProd, 1);
 console.log(answer6); 
+
+//7. Given an array of objects. Write a function to find the sum of ages of each person.
+// Your output should be: 121 /*** 60+36+16+9 ***/ 
+
+const array7 = [
+	{
+		name: "Jay",
+		age: 60
+	},
+	{
+		name: "Gloria",
+		age: 36
+	},
+	{
+		name: "Manny",
+		age: 16
+	},
+	{
+		name: "Joe",
+		age: 9
+	}
+]
+
+const sumofAges = (acc, curr) => curr.age >0  ? curr.age+ acc : acc;
+const answer7 = array7.reduce(sumofAges3, 0); 
+console.log(answer7); 
 
 
 
