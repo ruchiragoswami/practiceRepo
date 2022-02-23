@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework | Functional Programming </title>
+</head>
+<body>
+    
+    <h1> Functional Programming Homework </h1>
+
+    <script> 
+    
+    //Homework
+
+    //Given an array of integers
+    const array= [1, 3, 5, 20, 22, 11, 9, 67, 14, 999, 456, 132, 51, 30, 40, 45];
+
+    // a) Find the sum of all odd numbers
+    const sumOfOdd = (acc, curr) => curr %2 > 0 ? acc = acc + curr : acc; 
+    const outputA = array.reduce(sumOfOdd, 0);
+    console.log(outputA); //1191
+
+
+
+
+    // b) Find the sum of all numbers at odd indices    
+
+    const oddIndex = (acc, curr) => array.indexOf(curr) %2 > 0 ? acc =acc + curr : acc; 
+
+    const outputB = array.reduce(oddIndex, 0);
+
+    console.log(outputB); //1307 
+
+
+
+    // c) Find the biggest number in the array
+    const biggestNum1 = Math.max(...array); 
+    console.log(biggestNum1); 
+   
+   // above question done in another way 
+    const biggestNum2 = (acc, curr) => acc > curr? acc : curr; 
+   const outputC2 = array.reduce(biggestNum2, 0);
+    console.log(outputC2); 
+
+    // d) Find the numbers divisble by 10
+    const divByTen = num => num %10 === 0; 
+    const outputD = array.filter(divByTen);
+    console.log(outputD);
+    
+    //e) Return an array of numbers where odd numbers are incremened by one and even numbers are decremented by one
+
+    const changeByOne = num => num%2 === 0 ? num - 1 : num +1;
+    const outputE = array.map(changeByOne); 
+    console.log(outputE);
+
+    // f) return an object with the sum of all odd numbers and even numbers separtely
+
+    const separateSumObj = {odd: 0, even:0};
+    const findOddEvenSum = (separateSumObj, curr) => curr %2=== 0 ? {...separateSumObj, even : separateSumObj.even + curr } : {...separateSumObj, odd : separateSumObj.odd+ curr};
+    const outputF = array.reduce(findOddEvenSum, separateSumObj); 
+    console.log(outputF); 
+
+    
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
