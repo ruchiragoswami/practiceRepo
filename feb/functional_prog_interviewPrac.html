@@ -111,7 +111,7 @@ const array7 = [
 
 const sumofAges = (acc, curr) => curr.age >0  ? curr.age+ acc : acc;
 // const sumofAges = (acc, curr) => curr.age+ acc : acc; Try this
-const answer7 = array7.reduce(sumofAges3, 0); 
+const answer7 = array7.reduce(sumofAges, 0); 
 console.log(answer7); 
 
 // 8. Given an array. Convert it in to an object with key as the index of each element and value as the element itself.
@@ -119,6 +119,67 @@ console.log(answer7);
 const array8 = ["You", "all", "are", "rockstars"];
 
 
+// 9. Given an array of objects. If the name of an item is more than 5 characters in length, add type as ‘vegetable’. If the name of an item is less than or equal to 5 characters in length, add type as ‘fruit’. 
+/*
+Your Output should be:
+[
+	{
+		name: "Apple",
+		type: "fruit"
+	},
+	{
+		name: "Mango",
+		type: "fruit"
+	},
+	{
+		name: "Potato"
+		type: "vegetable"
+	},
+	{
+		name: "Guava",
+		type: "fruit"
+	},
+	{
+		name: "Capsicum",
+		type: "vegetable"
+	}
+] */ 
+
+const array9 = [
+	{
+		name: "Apple"
+	},
+	{
+		name: "Mango"
+	},
+	{
+		name: "Potato"
+	},
+	{
+		name: "Guava"
+	},
+	{
+		name: "Capsicum"
+	}
+]; 
+
+const typedArray = someObj => someObj.name.length <=5 ? ({...someObj, type: "fruit"}) : ({...someObj, type: "vegetable"});
+
+const answer9 = array9.map(typedArray);
+console.log(answer9) ;
+
+
+// 10. Given an array of objects. Question:
+// a. Get all the items in an array whose quantity is less than 2.
+// b. Get the total quantity of items present in the inventory.
+// c. Find the object which contains the item whose quantity is zero.
+
+const inventory = [
+    {name: 'fans', quantity: 3},
+    {name: 'chimneys', quantity: 0},
+    {name: 'bulbs', quantity: 5},
+    {name: 'stove', quantity: 1}    
+  ];
 
 
 
