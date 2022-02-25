@@ -169,11 +169,7 @@ const answer9 = array9.map(typedArray);
 console.log(answer9) ;
 
 
-// 10. Given an array of objects. Question:
-// a. Get all the items in an array whose quantity is less than 2.
-// b. Get the total quantity of items present in the inventory.
-// c. Find the object which contains the item whose quantity is zero.
-
+// 10. Given an array of objects. Question below: 
 const inventory = [
     {name: 'fans', quantity: 3},
     {name: 'chimneys', quantity: 0},
@@ -181,6 +177,25 @@ const inventory = [
     {name: 'stove', quantity: 1}    
   ];
 
+// 10-a. Get all the items in an array whose quantity is less than 2.
+
+const lessThanTwo = someObj => someObj.quantity < 2 ;
+const answer10A = inventory.filter(lessThanTwo);
+console.log(answer10A);
+
+// 10-b. Get the total quantity of items present in the inventory.
+
+const getTotal3 = (acc, curr) => curr.quantity + acc; 
+const answer10B = inventory.reduce(getTotal3, 0);
+console.log(answer10B); 
+
+// c. Find the object which contains the item whose quantity is zero.
+
+const zeroQuant = someObj=> someObj.quantity ===0;
+const answer10c = inventory.filter(zeroQuant);
+console.log(answer10c);
+
+// 11. Given an array. Write a function to join all elements of the array with a hyphen in between them.
 
 
 </script>
