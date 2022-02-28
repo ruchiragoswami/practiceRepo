@@ -232,7 +232,7 @@ console.log(vowelCaps2("apple"));
 
 
 // Trying to write the following in arrow function/ES6
-const isPrime2 = num => {
+const isPrime = num => {
     for (let i = 2; i < num; i++) {
         if ( num % i === 0 ) {
            return "not a prime number"}
@@ -241,7 +241,19 @@ const isPrime2 = num => {
     }
 }
 
-
+const isPrime3 = num => { 
+    if (num === 1) {
+        return "not a prime number"
+    } else if (num ===2 ) {
+        return `${num} is a prime number`
+    } else { 
+        for (let i = 2; i < num; i++) {
+        if ( num % i === 0 ) {
+           return "not a prime number"}
+        else {
+            return `${num} is a prime number`}
+    }}
+}
 
 
 
