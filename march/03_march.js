@@ -36,3 +36,18 @@ export default function App() {
     </div>
   );
 }
+
+return (
+  <div className="App">
+    <h1>Hello CodeSandbox</h1>
+    <h2>Twitter component </h2>
+    <input
+      value={inputValue}
+      // maxLength="10"
+      onChange={showRemaining}
+      style={{ backgroundColor: remainingChars < 0 ? "pink" : "initial" }}
+    />
+    <p> Characters remaining : {remainingChars} </p>
+  </div>
+);
+}
