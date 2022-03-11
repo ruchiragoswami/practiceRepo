@@ -31,9 +31,3 @@ export default function App() {
     </div>
   );
 }
-
-<label for="userInput"> Text here: <input type="text" id="userInput"></label>
-
-<button class="btnText" value="log"> Log </button>
-<button class="btnText" value="error"> Error </button>
-<button class="btnText" value="warn"> Warn </button>
