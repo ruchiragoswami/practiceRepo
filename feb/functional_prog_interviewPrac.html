@@ -189,7 +189,7 @@ const getTotal3 = (acc, curr) => curr.quantity + acc;
 const answer10B = inventory.reduce(getTotal3, 0);
 console.log(answer10B); 
 
-// c. Find the object which contains the item whose quantity is zero.
+// 10-c. Find the object which contains the item whose quantity is zero.
 
 const zeroQuant = someObj=> someObj.quantity ===0;
 const answer10c = inventory.filter(zeroQuant);
@@ -231,6 +231,9 @@ vowelCaps2('ruchirang');
 
 console.log(vowelCaps2("apple"));
 */
+
+ const charArray = (someStr) => (someStr.split(''));
+//  const myArray = charArray("pythonali");
 
 const checkVowel2 = anyChar => (anyChar === 'a' ||anyChar === 'e' ||anyChar === 'i' ||anyChar === 'o' || anyChar ==='u') ? anyChar.toUpperCase() : anyChar; 
 // undefined
