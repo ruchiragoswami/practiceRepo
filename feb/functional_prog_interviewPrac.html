@@ -222,6 +222,7 @@ If your input is: "neoG"
 Your output should be: "nEOg"
 */
 
+/* Not working 
 const vowelCaps2 = someString => {
      someString.replace("a", "A");
 }
@@ -229,6 +230,20 @@ const vowelCaps2 = someString => {
 vowelCaps2('ruchirang');
 
 console.log(vowelCaps2("apple"));
+*/
+
+const checkVowel2 = anyChar => (anyChar === 'a' ||anyChar === 'e' ||anyChar === 'i' ||anyChar === 'o' || anyChar ==='u') ? anyChar.toUpperCase() : anyChar; 
+// undefined
+myArray.map(checkVowel2);
+// ['p', 'y', 't', 'h', 'O', 'n', 'A', 'l', 'I']
+const myArr2 = charArray("Education");
+// undefined
+myArr2;
+// (9) ['E', 'd', 'u', 'c', 'a', 't', 'i', 'o', 'n']
+myArr2.map(checkVowel2);
+// (9) ['E', 'd', 'U', 'c', 'A', 't', 'I', 'O', 'n']
+myArr2.map(checkVowel2).join("");
+// 'EdUcAtIOn' 
 
 
 // Trying to write the following in arrow function/ES6
