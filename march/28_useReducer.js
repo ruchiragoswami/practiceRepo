@@ -62,3 +62,31 @@ function oddEvenReducer_switch6(acc, curr)  {
 }
 
 numList2.reduce(oddEvenReducer_switch6, {odd: 0, even: 0})
+
+
+
+// Tried switch on an array
+/*
+function oddEvenSumWithSwith3(acc, curr) { 
+    switch (curr) {
+        case "curr % 2 === 0" :
+            return {...acc, even: acc.even + curr}
+        case "curr % 2 != 0" :
+            return {...acc, odd: acc.odd + curr} 
+    }
+}
+numList.reduce(oddEvenSumWithSwith3, {odd: 0, even:0})
+
+
+
+function oddEvenSumWithSwith4(acc, curr) { 
+    switch (curr) {
+        case curr % 2 === 0 :
+            return {...acc, even: acc.even + curr}
+        case curr % 2 != 0 :
+            return {...acc, odd: acc.odd + curr} 
+    }
+}
+numList.reduce(oddEvenSumWithSwith4, {odd: 0, even:0})
+
+*/
