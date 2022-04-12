@@ -41,3 +41,13 @@ function Answer1() {
 }
 
 export { Answer1 };
+
+// Extra
+
+        //Currying 
+        const giveYourName2 = someName => msg => `${someName} says ${msg}`;
+
+        const myLogger2 = giveYourName2('Ramyaa');
+
+        myLogger2("I like volleyball");
+        'Ramyaa says I like volleyball'
