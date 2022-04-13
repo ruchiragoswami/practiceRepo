@@ -27,3 +27,17 @@ const differentColorMenShirt = (accObj, currObj) => (currObj.category === "men s
 
 const answer1b = clothingStock.reduce(differentColorMenShirt, []);
 console.log(answer1b); 
+
+// 1c: Console an array which only contains the elements which are in stock.
+/* Expected Output:
+[
+    {id: "0a1", color: "blue", category: "men shirt", item: "Regular Fit Men Shirt", inStock: true}, 
+    {id: "0a2", color: "black", category: "women top", item: "Regular Fit Women Top", inStock: true},
+    {id: "0a5", color: "red", category: "women top", item: "Slim Fit Women Top", inStock: true},
+    {id: "0a6", color: "yellow", category: "men shirt", item: "Casual Fit Men Shirt", inStock: true},
+    {id: "0a7", color: "orange", category: "men shirt", item: "Straight Fit Men Shirt", inStock: true}
+] */
+
+const itemsInStock = (accObj, currObj) => (currObj.inStock) ? {...accObj, currObj} : {...accObj}; 
+const answer1c = clothingStock.reduce(itemsInStock, {});
+console.log(answer1c); 
