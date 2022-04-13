@@ -23,3 +23,7 @@ console.log(answer1a);
 //1b. Console all the different colours available for men shirt which are currently in stock.
 // Expected Output: blue yellow orange
 
+const differentColorMenShirt = (accObj, currObj) => (currObj.category === "men shirt" && inStock)  ? [...accObj, currObj.color] : [...accObj]; 
+
+const answer1b = clothingStock.reduce(differentColorMenShirt, []);
+console.log(answer1b); 
